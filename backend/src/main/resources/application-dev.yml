@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:esports_db;DB_CLOSE_DELAY=-1;MODE=MySQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  secret: ${JWT_SECRET:9a4f2c8d3b7a1e5f8g0h2i4k6l8m0n2o4p6q8r0s2t4u6v8w0x2y4z6a8b0c2d4e}
+  expiration: 86400000 # 24 Hours in ms

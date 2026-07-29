@@ -1,0 +1,8 @@
+{
+  "name": "StageCore",
+  "description": "StageCore is a premium esports tournament platform and media brand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
